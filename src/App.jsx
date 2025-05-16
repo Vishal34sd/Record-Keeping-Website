@@ -49,7 +49,7 @@ function App() {
         <div className="data_val">
           <h4>Name</h4>
           <h4>Email</h4>
-          <h4>Remove</h4>
+          <h4><img  className = "delete" src="\public\delete-icon.webp"></img></h4>
         </div>
         {data.map((element, index) => {
           return(
