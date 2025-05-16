@@ -18,6 +18,11 @@ function App() {
     setName("");
     setEmail("");
   };
+  const removeItem = (index)=>{
+    let arr= data;
+    data.splice(index, 1);
+    setData([...arr]);
+  }
 
   return (
     <div className="App">
@@ -46,14 +51,17 @@ function App() {
           <h4>Email</h4>
           <h4>Remove</h4>
         </div>
-        {data.map((element, index) => (
-          <Fields
-            key={index}
-            name={element.name}
-            email={element.email}
-            index={index}
-          />
-        ))}
+        {data.map((element, index) => {
+          return(
+            <Fields
+              key={index}
+              name={element.name}
+              email={element.email}
+              index={index}
+              removeItem ={removeItem}
+            />
+          );
+        })}
       </div>
     </div>
   );
