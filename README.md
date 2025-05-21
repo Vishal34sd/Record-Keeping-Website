@@ -17,3 +17,4 @@ JavaScript (ES6+)
 HTML5 & CSS3
 
 No backend – data is stored in memory (for demo purposes)
+Easy to use 
